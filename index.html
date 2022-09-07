@@ -35,7 +35,7 @@
       <small>A Cloudflare Worker + Dexcom Login Example</small>
     </h1>
     <p id="signed-out">
-      <a href="https://proveits.me"
+      <a href="https://dexcom.superdug.workers.dev"
         >Login with Dexcom</a
       >
     </p>
@@ -47,7 +47,7 @@
     </p>
 
     <script>
-      const WORKER_URL = "https://proveits.me";
+      const WORKER_URL = "https://dexcom.superdug.workers.dev";
       const code = new URL(location.href).searchParams.get("code");
       const $login = document.querySelector("#login");
 
