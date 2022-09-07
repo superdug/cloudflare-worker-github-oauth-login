@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Login with GitHub – A Cloudflare Worker + GitHub Pages Login Example
+      Login with Dexcom – A Cloudflare Worker + Dexcom Login Example
     </title>
     <style>
       * {
@@ -31,12 +31,12 @@
   </head>
   <body data-state="signed-out">
     <h1>
-      Login with GitHub
-      <small>A Cloudflare Worker + GitHub Pages Login Example</small>
+      Login with Dexcom
+      <small>A Cloudflare Worker + Dexcom Login Example</small>
     </h1>
     <p id="signed-out">
-      <a href="https://github-oauth-login.gr2m.workers.dev"
-        >Login with GitHub</a
+      <a href="https://proveits.me"
+        >Login with Dexcom</a
       >
     </p>
     <p id="signed-in">
@@ -47,7 +47,7 @@
     </p>
 
     <script>
-      const WORKER_URL = "https://github-oauth-login.gr2m.workers.dev";
+      const WORKER_URL = "https://proveits.me";
       const code = new URL(location.href).searchParams.get("code");
       const $login = document.querySelector("#login");
 
